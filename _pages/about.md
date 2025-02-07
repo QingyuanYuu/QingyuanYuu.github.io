@@ -27,7 +27,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Mathematics-Computer Science student at UC San Diego, passionate about data science, programming, and investment analysis. With a strong academic foundation in Mathematics and Computer Science, I have developed skills in Python, Java, MATLAB, pyTorch and so on. I also have experience in financial analysis and data processing. Currently, I am actively involved in the Chinese Global Conference and further developing my Data Structures and Algorithms knowledge. My goal is to explore opportunities in computer vision, AI, and data science research, applying analytical and technical skills to solve real-world problems.
+I am a Mathematics-Computer Science student at UC San Diego, passionate about data science, programming, and investment analysis. With a strong academic foundation in Mathematics and Computer Science, I have developed skills in Python, Java, MATLAB, pyTorch and so on. I also have experience in financial analysis and data processing. 
+
+Currently, I am actively involved in the Chinese Global Conference and further developing my Data Structures and Algorithms knowledge. My goal is to explore opportunities in computer vision, AI, and data science research, applying analytical and technical skills to solve real-world problems.
+
+
 I’m always eager to learn, collaborate, and take on new challenges—let’s connect! 🚀
 
 
