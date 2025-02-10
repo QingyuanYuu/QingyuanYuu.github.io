@@ -94,10 +94,7 @@ ninja.data = [{
           window.location.href = "/blog/2025/bilding-own-web/";
         
       },
-    },{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-created-this-website",
+    },{id: "news-created-this-website",
           title: 'Created this website',
           description: "",
           section: "News",},{id: "projects-project-1",
