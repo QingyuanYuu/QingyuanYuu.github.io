@@ -94,17 +94,6 @@ ninja.data = [{
           window.location.href = "/blog/2024/advanced-images/";
         
       },
-    },{id: "post-a-post-with-redirect",
-      
-        title: "a post with redirect",
-      
-      description: "you can also redirect to assets like pdf",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/assets/pdf/example_pdf.pdf";
-        
-      },
     },{id: "post-a-post-with-twitter",
       
         title: "a post with twitter",
