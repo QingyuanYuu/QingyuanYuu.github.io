@@ -72,18 +72,7 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-what-excites-me-about-ai-amp-computer-vision",
-      
-        title: "What Excites Me About AI &amp; Computer Vision",
-      
-      description: "Exploring my passion for AI and computer vision and why I find it so fascinating.",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2025/find-research-lab/";
-        
-      },
-    },{id: "news-a-simple-inline-announcement",
+            },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
