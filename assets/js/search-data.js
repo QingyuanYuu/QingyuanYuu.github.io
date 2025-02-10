@@ -72,7 +72,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "news-a-simple-inline-announcement",
+            },{id: "post-what-excites-me-about-ai-amp-computer-vision",
+      
+        title: "What Excites Me About AI &amp; Computer Vision",
+      
+      description: "Exploring my passion for AI and computer vision and why I find it so fascinating.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/find-research-lab/";
+        
+      },
+    },{id: "post-building-my-first-personal-website",
+      
+        title: "Building My First Personal Website",
+      
+      description: "My journey in creating a personal website and what I learned along the way.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/bilding-own-web/";
+        
+      },
+    },{id: "news-a-simple-inline-announcement",
           title: 'A simple inline announcement.',
           description: "",
           section: "News",},{id: "news-a-long-announcement-with-details",
