@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-a-post-with-typograms",
+            },{id: "post-a-post-with-tabs",
+      
+        title: "a post with tabs",
+      
+      description: "this is what included tabs in a post could look like",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2024/tabs/";
+        
+      },
+    },{id: "post-a-post-with-typograms",
       
         title: "a post with typograms",
       
