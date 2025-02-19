@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Looking for a lab about AI & Computer Vision :sparkles: :smile:
+Looking for a lab about AI, LLM, Computer Vision, Computational Biology and so on! :sparkles: :smile:
