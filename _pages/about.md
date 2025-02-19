@@ -27,12 +27,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Mathematics-Computer Science student at UC San Diego, passionate about data science, programming, and investment analysis. With a strong academic foundation in Mathematics and Computer Science, I have developed skills in Python, Java, MATLAB, pyTorch and so on. I also have experience in financial analysis and data processing. 
+I am a Mathematics-Computer Science student at UC San Diego, passionate about data science, programming, and computational biology. With a strong foundation in Mathematics and Computer Science, I have developed expertise in Python, Java, MATLAB, PyTorch, and various data processing tools. My experience also extends to financial analysis and data-driven decision-making.
 
-Currently, I am actively involved in the Chinese Global Conference and further developing my Data Structures and Algorithms knowledge. My goal is to explore opportunities in computer vision, AI, and data science research, applying analytical and technical skills to solve real-world problems.
+Currently, I am actively involved in the Chinese Global Conference and further developing my Data Structures and Algorithms knowledge. My goal is to explore opportunities in computer vision, AI, and data science research, applying analytical and technical skills to solve real-world problems, including genomics and medical research.
 
+I am eager to explore opportunities in computer vision, AI, and bioinformatics research, where I can integrate machine learning, statistical analysis, and mathematical modeling to solve real-world problems in genetics and healthcare.
 
-I’m always eager to learn, collaborate, and take on new challenges—let’s connect! 🚀
+I’m always excited to learn, collaborate, and take on new challenges—let’s connect! 🚀
 
 
 Here is my LinkedIn [Qingyuan Yu]([https://fontawesome.com/](https://www.linkedin.com/in/qingyuan-yu-955344305/))!
