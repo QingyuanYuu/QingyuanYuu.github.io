@@ -58,7 +58,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-what-excites-me-about-ai-amp-computer-vision",
+            },{id: "post-completing-my-dna-sequence-classification-project",
+      
+        title: "Completing My DNA Sequence Classification Project",
+      
+      description: "Reflecting on my journey of building a deep learning model for DNA sequence classification.",
+      section: "Posts",
+      handler: () => {
+        
+          window.location.href = "/blog/2025/DNA-Sequence-Classification-project/";
+        
+      },
+    },{id: "post-what-excites-me-about-ai-amp-computer-vision",
       
         title: "What Excites Me About AI &amp; Computer Vision",
       
