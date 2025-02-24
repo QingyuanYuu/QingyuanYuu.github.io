@@ -100,9 +100,9 @@ ninja.data = [{
           section: "News",},{id: "news-complete-the-project-of-dna-sequence-classification",
           title: 'Complete the project of DNA Sequence Classification',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-dna-sequence-classification",
+          title: 'DNA Sequence Classification',
+          description: "Classifying coding and non-coding regions using CNN",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{
