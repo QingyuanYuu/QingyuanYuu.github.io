@@ -9,7 +9,6 @@ profile:
   image: jason.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>UNIT 602</p>
     <p>4200 BROOKE CT</p>
     <p>SAN DIEGO, CA 92122</p>
 
