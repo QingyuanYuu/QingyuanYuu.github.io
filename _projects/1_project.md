@@ -1,81 +1,54 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: DNA Sequence Classification
+description: Classifying coding and non-coding regions using CNN
+img: assets/img/Dna_classification_background.jpg
 importance: 1
 category: work
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+## Project Overview
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+The **DNA Sequence Classification** project focuses on training a Convolutional Neural Network (CNN) to distinguish between coding and non-coding regions in DNA sequences. Using datasets from Ensembl and NCBI, the project leverages PyTorch, BioPython, and various Python libraries for data processing, model training, and visualization.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+### Objectives
+- Classify DNA sequences into coding and non-coding regions.
+- Build and train a CNN using PyTorch.
+- Visualize data distributions and model performance.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+### Tools & Libraries
+- **PyTorch** – Deep learning framework
+- **BioPython** – DNA sequence processing
+- **Pandas & NumPy** – Data manipulation
+- **Matplotlib** – Data visualization
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+### Data Sources
+- [NCBI GenBank](https://www.ncbi.nlm.nih.gov/genbank/)
+- [Ensembl Genome Browser](https://www.ensembl.org/index.html)
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+## Detailed Process
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+1. **Data Preprocessing**
+   - Extracted DNA sequences from FASTA and GenBank files.
+   - Applied one-hot encoding and K-mer frequency encoding.
 
-{% raw %}
+2. **Model Training**
+   - Designed a 1D CNN for sequence classification.
+   - Used cross-entropy loss and optimized using Adam.
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
+3. **Evaluation & Results**
+   - Measured accuracy, precision, recall, and F1-score.
+   - Visualized confusion matrix and ROC curve.
 
-{% endraw %}
+## Key Insights
+
+- The CNN achieved **92% accuracy** in distinguishing coding regions.
+- Data augmentation techniques improved generalization.
+
+For the full code and documentation, visit the [GitHub Repository](https://github.com/QingyuanYuu/DNA_Classification_Project).
+
+---
+
+This enhanced project page includes a detailed overview, key insights, and direct links, presenting your work effectively.
+
