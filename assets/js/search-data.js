@@ -108,6 +108,11 @@ ninja.data = [{
           description: "Classifying coding and non-coding regions using CNN",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
+            },},{id: "projects-rl-mario-ppo",
+          title: 'RL Mario (PPO)',
+          description: "PPO agent on gym_super_mario_bros, clears levels 1-1 and 1-2",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_rl_mario/";
             },},{
         id: 'social-email',
         title: 'email',
