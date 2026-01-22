@@ -108,11 +108,21 @@ ninja.data = [{
           description: "Classifying coding and non-coding regions using CNN",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
-            },},{id: "projects-rl-mario-ppo",
-          title: 'RL Mario (PPO)',
-          description: "PPO agent on gym_super_mario_bros, clears levels 1-1 and 1-2",
+            },},{id: "projects-rl-mario",
+          title: 'RL Mario',
+          description: "PPO agent on gym_super_mario_bros, clears World 1-1 and 1-2",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_rl_mario/";
+            },},{id: "projects-ocr-guided-treasure-hunter",
+          title: 'OCR-Guided Treasure Hunter',
+          description: "ROS2-based autonomous vehicle framework for navigation, lane following, and OCR-guided intersection handling",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/3_ocr_robocar/";
+            },},{id: "projects-aria-mujoco-teleoperation",
+          title: 'Aria MuJoCo Teleoperation',
+          description: "Real-time teleoperation of a MuJoCo-simulated Franka Panda using Meta Aria hand tracking",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/4_aria_mujoco_teleop/";
             },},{
         id: 'social-email',
         title: 'email',
