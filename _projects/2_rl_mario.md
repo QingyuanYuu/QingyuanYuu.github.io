@@ -1,10 +1,10 @@
 ---
 layout: page
-title: RL Mario (PPO)
-description: PPO agent on gym_super_mario_bros, clears levels 1-1 and 1-2
+title: RL Mario
+description: PPO agent on gym_super_mario_bros, clears World 1-1 and 1-2
 img: assets/img/3.jpg
 importance: 2
-category: work
+category: fun
 ---
 
 ## Overview
