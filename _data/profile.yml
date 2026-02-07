@@ -1,0 +1,21 @@
+name: Qingyuan Yu
+affiliation: UC San Diego, Mathematics-Computer Science
+email: qiy005@ucsd.edu
+links:
+  - label: Email
+    url: mailto:qiy005@ucsd.edu
+  - label: Blog
+    url: /blog/
+  - label: GitHub
+    url: https://github.com/QingyuanYuu
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/qingyuan-yu-955344305/
+  - label: CV
+    url: /cv/
+bio:
+  - I am a Mathematics-Computer Science student at UC San Diego, passionate about robotics, machine learning, and intelligent systems.
+  - With a strong foundation in Mathematics and Computer Science, I have developed expertise in Python, C, Java, MATLAB, PyTorch, and various data processing tools.
+  - My goal is to explore opportunities in computer vision, AI, and robotics research, applying analytical and technical skills to solve real-world problems in robotics.
+news_limit: 6
+posts_limit: 3
+projects_limit: 6

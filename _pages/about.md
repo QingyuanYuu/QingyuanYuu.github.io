@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /
+permalink: /about/
 subtitle: <a href='#'>UC San Diego</a>. Mathematics-Computer Science. qiy005@ucsd.edu
 
 profile:
