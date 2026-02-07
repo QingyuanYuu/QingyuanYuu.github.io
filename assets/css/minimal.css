@@ -16,20 +16,42 @@ main {
   padding: 0 20px;
 }
 
+.bio-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.photo-container {
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e5e5e5;
+}
+
 h1 {
   font-size: 2.2rem;
   margin: 0 0 0.4rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .subtitle {
   margin: 0.2rem 0 0.6rem;
   color: #444;
+  text-align: center;
 }
 
 .links {
   margin: 0 0 1rem;
   color: #444;
+  text-align: center;
 }
 
 .links a {
@@ -39,6 +61,12 @@ h1 {
 
 .links a:hover {
   text-decoration: underline;
+}
+
+.bio {
+  margin: 0;
+  color: #333;
+  flex: 1;
 }
 
 section {
@@ -87,5 +115,24 @@ a:hover {
 
   h1 {
     font-size: 1.9rem;
+  }
+
+  .bio-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .photo-container {
+    text-align: center;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bio {
+    text-align: center;
   }
 }

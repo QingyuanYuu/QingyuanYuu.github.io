@@ -47,8 +47,17 @@
           </p>
         {% endif %}
 
-        {% if profile.bio %}
-          <p>{{ profile.bio | join: ' ' }}</p>
+        {% if profile.bio or profile.photo %}
+          <div class="bio-container">
+            {% if profile.photo %}
+              <div class="photo-container">
+                <img src="{{ '/assets/img/' | append: profile.photo | relative_url }}" alt="{{ name }}" class="profile-photo">
+              </div>
+            {% endif %}
+            {% if profile.bio %}
+              <p class="bio">{{ profile.bio | join: ' ' }}</p>
+            {% endif %}
+          </div>
         {% endif %}
         {{ content }}
       </header>
