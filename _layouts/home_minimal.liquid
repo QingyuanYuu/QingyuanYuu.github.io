@@ -14,7 +14,7 @@
         {{ site.last_name -}}
       {%- endif %}
     </title>
-    <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}?v=20261109-live-demo">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   </head>
   <body>
@@ -95,20 +95,20 @@
             <video
               class="publication-video"
               width="720"
-              height="406"
+              height="306"
               autoplay
               muted
               loop
               playsinline
               controls
               preload="metadata"
-              poster="{{ '/assets/img/hug-teaser-poster.jpg' | relative_url }}"
-              aria-label="HuG humanoid robot searching for and grasping an object on a shelf"
+              poster="{{ '/assets/img/hug-live-demo-poster.jpg' | relative_url }}"
+              aria-label="HuG live demo of a simulated humanoid reaching for a bottle"
             >
-              <source src="{{ '/assets/video/hug-teaser.mp4' | relative_url }}" type="video/mp4">
-              <a href="https://xuanbinpeng.com/hug/">Watch the HuG demonstration.</a>
+              <source src="{{ '/assets/video/hug-live-demo.mp4' | relative_url }}" type="video/mp4">
+              <a href="https://xuanbinpeng.com/hug/demo/">Try the HuG live demo.</a>
             </video>
-            <a class="video-caption" href="https://xuanbinpeng.com/hug/">HuG · real-world shelf picking</a>
+            <a class="video-caption" href="https://xuanbinpeng.com/hug/demo/">HuG · live demo</a>
           </div>
           <div class="publication-details">
             <h3>
