@@ -16,8 +16,10 @@ layout: default
             target="_blank"
             rel="noopener noreferrer"
             class="float-right"
+            aria-label="Download Qingyuan Yu's CV as a PDF"
           >
-            <i class="fa-solid fa-file-pdf"></i>
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+            <span style="font-size: 1rem">Download PDF</span>
           </a>
         {% endif %}
       </h1>
@@ -67,8 +69,10 @@ layout: default
             target="_blank"
             rel="noopener noreferrer"
             class="float-right"
+            aria-label="Download Qingyuan Yu's CV as a PDF"
           >
-            <i class="fa-solid fa-file-pdf"></i>
+            <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+            <span style="font-size: 1rem">Download PDF</span>
           </a>
         {% endif %}
       </h1>
@@ -88,7 +92,18 @@ layout: default
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            <h3 class="card-title font-weight-medium">
+              {% case data[0] %}
+                {% when 'work' -%}
+                  Research &amp; Experience
+                {% when 'volunteer' -%}
+                  Community
+                {% when 'basics' -%}
+                  Contact &amp; Research Interests
+                {% else -%}
+                  {{- data[0] | capitalize }}
+              {% endcase %}
+            </h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}

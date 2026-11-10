@@ -5,7 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
       {% assign profile = site.data.profile %}
-      {% if page.title %}{{ page.title }}{% elsif profile.name %}{{ profile.name }}{% else %}{{ site.first_name }} {{ site.last_name }}{% endif %}
+      {% if page.title -%}
+        {{- page.title -}}
+      {%- elsif profile.name -%}
+        {{- profile.name -}}
+      {%- else -%}
+        {{- site.first_name }}
+        {{ site.last_name -}}
+      {%- endif %}
     </title>
     <link rel="stylesheet" href="{{ '/assets/css/minimal.css' | relative_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
@@ -39,9 +46,11 @@
             {% for item in profile.links %}
               {% assign link_url = item.url %}
               {% if link_url contains '://' or link_url contains 'mailto:' %}
-                <a href="{{ link_url }}">{{ item.label }}</a>{% unless forloop.last %} / {% endunless %}
+                <a href="{{ link_url }}">{{ item.label }}</a>
+                {%- unless forloop.last %} / {% endunless %}
               {% else %}
-                <a href="{{ link_url | relative_url }}">{{ item.label }}</a>{% unless forloop.last %} / {% endunless %}
+                <a href="{{ link_url | relative_url }}">{{ item.label }}</a>
+                {%- unless forloop.last %} / {% endunless %}
               {% endif %}
             {% endfor %}
           </p>
@@ -70,9 +79,9 @@
         {% if news_items and news_items.size > 0 %}
           <ul class="list">
             {% for item in news_items limit: news_limit %}
-              <li>
-                <span class="meta">{{ item.date | date: "%Y-%m-%d" }}</span>
-                <span> - {{ item.content | strip_html | strip_newlines }}</span>
+              <li class="news-item">
+                <time class="meta" datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%Y-%m' }}</time>
+                <div class="news-content">{{ item.content }}</div>
               </li>
             {% endfor %}
           </ul>
@@ -81,32 +90,48 @@
 
       <section id="publications">
         <h2>Publications</h2>
-        <ul class="list">
-          <li>
-            <strong>
-              <a href="https://xuanbinpeng.com/hug/">
-                HuG: Learning Humanoid Whole-Body Affordance-Aware Grasping with Active Perception
-              </a>
-            </strong>
-            <br>
-            Xuanbin Peng<sup>*</sup>, Lai Wei<sup>*</sup>, Yuze Zhai<sup>*</sup>,
-            <strong>Qingyuan Yu<sup>*</sup></strong>, Keyi Wang, Jianglong Ye, Xiaolong Wang
-            <br>
-            <span class="meta">Conference on Robot Learning (CoRL), 2026</span>
-            <br>
-            <span class="meta"><sup>*</sup> Equal contribution.</span>
-            <br>
-            <a href="https://xuanbinpeng.com/hug/">Project</a> /
-            <a href="https://arxiv.org/abs/2611.01659">arXiv</a> /
-            <a href="https://xuanbinpeng.com/hug/HuG.pdf">PDF</a> /
-            <a href="https://github.com/openrobokit/graspkit/tree/main/projects/hug">Code</a>
-          </li>
-        </ul>
+        <article class="publication">
+          <div class="publication-media">
+            <video
+              class="publication-video"
+              width="720"
+              height="406"
+              autoplay
+              muted
+              loop
+              playsinline
+              controls
+              preload="metadata"
+              poster="{{ '/assets/img/hug-teaser-poster.jpg' | relative_url }}"
+              aria-label="HuG humanoid robot searching for and grasping an object on a shelf"
+            >
+              <source src="{{ '/assets/video/hug-teaser.mp4' | relative_url }}" type="video/mp4">
+              <a href="https://xuanbinpeng.com/hug/">Watch the HuG demonstration.</a>
+            </video>
+            <a class="video-caption" href="https://xuanbinpeng.com/hug/">HuG · real-world shelf picking</a>
+          </div>
+          <div class="publication-details">
+            <h3>
+              <a href="https://xuanbinpeng.com/hug/"> HuG: Learning Humanoid Whole-Body Affordance-Aware Grasping with Active Perception </a>
+            </h3>
+            <p class="publication-authors">
+              Xuanbin Peng<sup>*</sup>, Lai Wei<sup>*</sup>, Yuze Zhai<sup>*</sup>, <strong>Qingyuan Yu<sup>*</sup></strong
+              >, Keyi Wang, Jianglong Ye, Xiaolong Wang
+            </p>
+            <p class="meta">Conference on Robot Learning (CoRL), 2026</p>
+            <p class="meta"><sup>*</sup> Equal contribution.</p>
+            <p class="publication-links">
+              <a href="https://xuanbinpeng.com/hug/">Project</a> / <a href="https://arxiv.org/abs/2611.01659">arXiv</a> /
+              <a href="https://xuanbinpeng.com/hug/HuG.pdf">PDF</a> /
+              <a href="https://github.com/openrobokit/graspkit/tree/main/projects/hug">Code</a>
+            </p>
+          </div>
+        </article>
       </section>
 
       <section id="projects">
         <h2>Selected Projects</h2>
-        {% assign project_items = site.projects | sort: 'importance' %}
+        {% assign project_items = site.projects | where: 'selected', true | sort: 'importance' %}
         {% if project_items and project_items.size > 0 %}
           <ul class="list">
             {% for project in project_items limit: projects_limit %}
@@ -125,13 +150,28 @@
           <ul class="list">
             {% for post in site.posts limit: posts_limit %}
               <li>
-                <span class="meta">{{ post.date | date: "%Y-%m-%d" }}</span>
-                <span> - <a href="{{ post.url | relative_url }}">{{ post.title }}</a></span>
+                <span class="meta">{{ post.date | date: '%Y-%m-%d' }}</span>
+                <span>
+                  - <a href="{{ post.url | relative_url }}">{{ post.title }}</a></span
+                >
               </li>
             {% endfor %}
           </ul>
         {% endif %}
       </section>
     </main>
+    <script>
+      const teaser = document.querySelector('.publication-video');
+      if (teaser) {
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const applyMotionPreference = () => {
+          teaser.autoplay = !reducedMotion.matches;
+          if (reducedMotion.matches) teaser.pause();
+          else teaser.play().catch(() => {});
+        };
+        applyMotionPreference();
+        reducedMotion.addEventListener('change', applyMotionPreference);
+      }
+    </script>
   </body>
 </html>

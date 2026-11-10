@@ -9,8 +9,8 @@ profile:
   image: jason.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>4210 BROOKE CT</p>
-    <p>SAN DIEGO, CA 92122</p>
+    <p>UC San Diego</p>
+    <p>La Jolla, California</p>
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
@@ -26,13 +26,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Mathematics-Computer Science student at UC San Diego, passionate about robotics, machine learning, and intelligent systems. With a strong foundation in Mathematics and Computer Science, I have developed expertise in Python, C, Java, MATLAB, PyTorch, and various data processing tools. My experience also extends to financial analysis and data-driven decision-making.
+I am a Mathematics-Computer Science undergraduate at UC San Diego, expected to graduate in March 2027. I work on embodied intelligence with Prof. Xiaolong Wang.
 
-Currently, I am actively involved in the Chinese Global Conference and further developing my Algorithms knowledge. My goal is to explore opportunities in computer vision, AI, and robotics research, applying analytical and technical skills to solve real-world problems in robotics.
+My research focuses on active perception and world models for embodied agents, and on coupling perception with whole-body control for humanoid manipulation and navigation.
 
-I am eager to explore opportunities in robotics, AI, RL, and world models, where I can integrate machine learning, statistical analysis, and mathematical modeling to build robust perception, planning, and decision-making systems.
+I am a co-first author of [HuG](https://xuanbinpeng.com/hug/) (CoRL 2026), and I am currently developing ROAM, a memory-driven system for open-vocabulary object retrieval. Previously, I was a Machine Learning Intern at Hikvision Research Institute from July to September 2025.
 
-I’m always excited to learn, collaborate, and take on new challenges—let’s connect! 🚀
+My recent projects explore language-model reasoning with LoRA SFT and GRPO, vision-language models for auditing reward hacking, and robot state estimation and SLAM.
 
-
-Here is my LinkedIn [Qingyuan Yu]([https://fontawesome.com/](https://www.linkedin.com/in/qingyuan-yu-955344305/))!
+[CV](/cv/) / [LinkedIn](https://www.linkedin.com/in/qingyuan-yu-6911b5331/) / [GitHub](https://github.com/QingyuanYuu)

@@ -10,13 +10,13 @@ links:
   - label: GitHub
     url: https://github.com/QingyuanYuu
   - label: LinkedIn
-    url: https://www.linkedin.com/in/qingyuan-yu-955344305/
+    url: https://www.linkedin.com/in/qingyuan-yu-6911b5331/
   - label: CV
     url: /cv/
 bio:
-  - I am a Mathematics-Computer Science student at UC San Diego, passionate about robotics, machine learning, and intelligent systems.
-  - With a strong foundation in Mathematics and Computer Science, I have developed expertise in Python, C, Java, MATLAB, PyTorch, and various data processing tools.
-  - My goal is to explore opportunities in computer vision, AI, and robotics research, applying analytical and technical skills to solve real-world problems in robotics.
-news_limit: 6
+  - I am a Mathematics-Computer Science undergraduate at UC San Diego (expected March 2027), working on embodied intelligence with Prof. Xiaolong Wang.
+  - My research focuses on active perception, world models, and coupling perception with whole-body control for humanoid manipulation and navigation.
+  - I am a co-first author of HuG (CoRL 2026) and am currently developing ROAM, a memory-driven system for open-vocabulary object retrieval.
+news_limit: 3
 posts_limit: 3
 projects_limit: 6
