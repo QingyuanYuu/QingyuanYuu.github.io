@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-cv",
           title: "cv",
-          description: "You can find my academic background, work experience, skills, achievements here!",
+          description: "Education, research experience, internships, projects, and technical skills.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -100,8 +100,17 @@ ninja.data = [{
           section: "News",},{id: "news-complete-the-project-of-dna-sequence-classification",
           title: 'Complete the project of DNA Sequence Classification',
           description: "",
-          section: "News",},{id: "news-excited-to-announce-that-i-will-be-joining-hikvision-as-an-ai-algorithm-engineer-intern-starting-july-16th",
-          title: 'Excited to announce that I will be joining HikVision as an AI Algorithm...',
+          section: "News",},{id: "news-started-as-a-machine-learning-intern-at-hikvision-research-institute-working-on-image-text-retrieval-and-training-data-pipelines",
+          title: 'Started as a Machine Learning Intern at Hikvision Research Institute, working on image-text...',
+          description: "",
+          section: "News",},{id: "news-completed-my-machine-learning-internship-at-hikvision-research-institute-where-i-worked-on-clip-based-image-text-reranking-data-quality-filtering-and-model-error-diagnosis",
+          title: 'Completed my Machine Learning internship at Hikvision Research Institute, where I worked on...',
+          description: "",
+          section: "News",},{id: "news-started-roam-ongoing-research-with-prof-xiaolong-wang-at-uc-san-diego-on-memory-driven-active-observation-for-open-vocabulary-object-retrieval",
+          title: 'Started ROAM, ongoing research with Prof. Xiaolong Wang at UC San Diego on...',
+          description: "",
+          section: "News",},{id: "news-our-co-first-authored-paper-hug-corl-2026-is-now-available-on-arxiv",
+          title: 'Our co-first-authored paper HuG (CoRL 2026) is now available on arXiv!',
           description: "",
           section: "News",},{id: "projects-dna-sequence-classification",
           title: 'DNA Sequence Classification',
@@ -113,9 +122,9 @@ ninja.data = [{
           description: "PPO agent on gym_super_mario_bros, clears World 1-1 and 1-2",
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_rl_mario/";
-            },},{id: "projects-ocr-guided-treasure-hunter",
-          title: 'OCR-Guided Treasure Hunter',
-          description: "ROS2-based autonomous vehicle framework for navigation, lane following, and OCR-guided intersection handling",
+            },},{id: "projects-vision-based-autonomous-driving",
+          title: 'Vision-Based Autonomous Driving',
+          description: "OCR traffic-sign recognition and ROS2 vehicle control, with 95% recognition accuracy at 10 Hz",
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_ocr_robocar/";
             },},{id: "projects-aria-mujoco-teleoperation",
@@ -123,19 +132,46 @@ ninja.data = [{
           description: "Real-time teleoperation of a MuJoCo-simulated Franka Panda using Meta Aria hand tracking",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_aria_mujoco_teleop/";
+            },},{id: "projects-roam",
+          title: 'ROAM',
+          description: "Memory-driven active observation for open-vocabulary object retrieval on a wheeled humanoid",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/5_roam/";
+            },},{id: "projects-fine-tuning-qwen3-4b-for-reasoning",
+          title: 'Fine-Tuning Qwen3-4B for Reasoning',
+          description: "Prompt engineering, LoRA SFT, and GRPO improved validation accuracy from 47% to 66.22%",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_qwen_reasoning/";
+            },},{id: "projects-can-vlms-audit-reward-hacking",
+          title: 'Can VLMs Audit Reward Hacking?',
+          description: "A MuJoCo benchmark of 20 PPO policies for studying reward exploitation and VLM auditing",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_vlm_reward_hacking/";
+            },},{id: "projects-robot-state-estimation-and-slam",
+          title: 'Robot State Estimation and SLAM',
+          description: "Pose-graph SLAM, vectorized ICP, and an SE(3) EKF with a stereo vision front-end",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_robot_state_estimation/";
             },},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
-          window.open("mailto:%79%6F%75@%65%78%61%6D%70%6C%65.%63%6F%6D", "_blank");
+          window.open("mailto:%71%69%79%30%30%35@%75%63%73%64.%65%64%75", "_blank");
         },
       },{
-        id: 'social-inspire',
-        title: 'Inspire HEP',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("https://inspirehep.net/authors/1010907", "_blank");
+          window.open("https://github.com/QingyuanYuu", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/qingyuan-yu-6911b5331", "_blank");
         },
       },{
         id: 'social-rss',
@@ -143,20 +179,6 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("/feed.xml", "_blank");
-        },
-      },{
-        id: 'social-scholar',
-        title: 'Google Scholar',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://scholar.google.com/citations?user=qc6CJjYAAAAJ", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.alberteinstein.com/", "_blank");
         },
       },{
       id: 'light-theme',
